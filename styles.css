@@ -1,0 +1,122 @@
+/*padding用多个值不要加逗号！！ */
+/*border: 50px solid grey; 如果border不明确表示是什么style(这里是solid)，不会显示*/
+/* margin-bottom: 10px; 2个margin是贴着的时候，只取最大值*/
+/* 把margin和padding写死是有很大风险的，因为后面你的活动都是在margin或padding只下的多少个px完成的 */
+
+body {
+    margin: 0;
+    padding:0;
+} 
+
+/* header */
+header {
+    background-image: url(images/header_background.jpg);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    /* background-color: #89cff0; */
+    /* backdrop-filter: blur(5px); */
+    color:white;
+    height: 480px;
+    /* padding: 20px; */
+}
+ul{
+    margin: 0;/*我怎么知道这一个地方的空白到底是属于哪一层的啊*/
+    padding:0;
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 80px;
+    /* display: inline-block; */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav .mobile {
+    display: none;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+.logo {
+    background-image: url(images/logo.jpg);
+    background-size: 128px;
+    background-repeat: no-repeat;
+    background-position: c;
+    border-radius: 50%;
+    text-indent: -999999px;
+    width: 128px;
+    display: inline-block;
+    height: 128px;
+    position: relative;
+    top: -60px;
+
+}
+/* responsive rules */
+@media screen and (max-width: 566px) {
+    header {
+        height: 300px;
+    }
+    nav .mobile {
+        display: inline-block;
+    }
+
+    nav .desktop {
+        display: none;
+    }
+}
+
+
+/* feature */
+
+.features {
+    background-color: white;
+    padding: 20px;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features figure{
+    width: 300px;
+    height: 330px;
+    color: gray;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.features figure img {
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    box-shadow: grey 0 0 10px;
+    width: 300px;
+}
+/* responsive rules */
+/* @media screen and (max-width: 566px) {
+    .features {
+        display: block;
+    }
+} */
+
+/* footer */
+footer {
+    background-color: black;
+    color:grey;
+    font-size: 15px;
+    padding: 20px;
+    height: 50px;
+    text-align: center;
+}
+
