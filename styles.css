@@ -118,12 +118,7 @@ li a:hover{
     box-shadow: grey 0 0 10px;
     width: 200px;
 }
-/* responsive rules */
-/* @media screen and (max-width: 566px) {
-    .features {
-        display: block;
-    }
-} */
+
 
 /* footer */
 footer {
