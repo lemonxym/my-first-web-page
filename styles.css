@@ -28,7 +28,7 @@ ul{
     
 }
 
-li{
+nav ul li{
     display: inline-block;
     margin-right: 20px;
     margin-top: 80px;
@@ -64,7 +64,7 @@ li a:hover{
 
 }
 /* responsive rules */
-@media screen and (max-width: 566px) {
+@media screen and (max-width: 732px) {/*566px*/
     header {
         height: 300px;
     }
@@ -75,6 +75,19 @@ li a:hover{
     nav .desktop {
         display: none;
     }
+
+    nav ul li {
+        margin-top: 40px;
+    }
+    
+    
+    .logo {
+        background-size: 88px;
+        width: 88px;
+        height:88px;
+        top: -30px;
+    }
+    
 }
 
 
